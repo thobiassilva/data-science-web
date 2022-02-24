@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "../../assets/img/logo.png"
 
 const TopbarStyled = styled.div`
   width: 100%;
@@ -37,7 +38,9 @@ const NavbarStyled = styled.div`
 export default function Topbar() {
   return (
     <TopbarStyled>
-      <LogoStyled></LogoStyled>
+      <LogoStyled>
+        <img src={logo} alt="" />
+      </LogoStyled>
       <NavbarStyled>
         <a href="#sobre">
           <span>Sobre</span>

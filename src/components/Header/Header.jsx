@@ -1,26 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import capa from "../../assets/img/capa.jpg"
 
 const HeaderStyled = styled.div`
+background-color: #4e7fde;
   width: 100%;
   height: 500px;
-  background-image: linear-gradient(
-    to bottom,
-    #0b03c2,
-    #0020c7,
-    #0031ca,
-    #003ecd,
-    #004acf,
-    #004ad0,
-    #004bd0,
-    #004bd1,
-    #003fd0,
-    #0031cf,
-    #0020cd,
-    #0900c9
-  );
+
+  img {
+    max-width: 100%;
+    max-height: 500px;
+  }
 `;
 
 export default function Header() {
-  return <HeaderStyled></HeaderStyled>;
+  return <HeaderStyled>
+    <img src={capa} alt="" />
+  </HeaderStyled>;
 }

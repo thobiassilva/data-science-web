@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import CardImage from "./CardImage/CardImage";
 import CardText from "./CardText/CardText";
+import notebook from "../../assets/img/notebook.jpg";
+import notLed from "../../assets/img/not-led.jpg"
+import circulos from "../../assets/img/circulos.jpg"
 
 const MainCardStyled = styled.div`
   width: 100%;
@@ -32,11 +35,13 @@ export default function Body() {
           negócios e sociedade como um todo. Contará com um time de apoio para
           preparar e conectar você com oportunidades de trabalho.
         </CardText>
-        <CardImage></CardImage>
+
+        <CardImage imagem={notebook}/>
+
       </MainCardStyled>
       <br />
       <MainCardStyled>
-        <CardImage></CardImage>
+      <CardImage imagem={circulos}/>
         <CardText title="Porque essa formação é completa e inédita?">
           Podemos começar falando da carga horária de 1000h, porém isso é só um
           número.
@@ -64,7 +69,7 @@ export default function Body() {
           técnicos adquiridos, você também terá contato com metodologias ágeis e
           ferramentas utilizadas em projetos reais.
         </CardText>
-        <CardImage></CardImage>
+        <CardImage imagem={notLed}/>
       </MainCardStyled>
     </>
   );
