@@ -8,7 +8,9 @@ const CardImageStyled = styled.div`
 `;
 
 export default function CardImage(props) {
-  return <CardImageStyled>
-    <img src={props.imagem} alt="" />
-  </CardImageStyled>;
+  return (
+    <CardImageStyled>
+      <img src={props.imagem} alt="" />
+    </CardImageStyled>
+  );
 }

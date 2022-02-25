@@ -5,7 +5,7 @@ import Topbar from "./components/Topbar/Topbar";
 import { Infos } from "./components/Infos/Infos";
 import { Footer } from "./components/Footer/Footer/Footer";
 import { Contact } from "./components/Contact/Contact";
-
+import React from "react";
 
 function App() {
   return (

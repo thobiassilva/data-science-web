@@ -6,35 +6,35 @@ import { BiCopyright } from "react-icons/bi";
 import styled from "styled-components";
 
 export const FooterStyle = styled.footer`
-    .FooterStyle {
-        background-color: #0b03c2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .FooterStyle {
+    background-color: #0b03c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .CopyRigth {
-        color: #fff;
-        margin-bottom: 10px;
-    }
+  .CopyRigth {
+    color: #fff;
+    margin-bottom: 10px;
+  }
 `;
 
 function Footer() {
   return (
     <FooterStyle>
-       <footer className="FooterStyle">
+      <footer className="FooterStyle">
         <div>
-            <FooterSocial />
-          </div>
-          <div>
-            <FooterLink />
-          </div>
+          <FooterSocial />
+        </div>
+        <div>
+          <FooterLink />
+        </div>
 
-          <div className="CopyRigth">
-            <BiCopyright/>
-            Your website 2022. All Rigths Reserved.
-          </div>
-       </footer>
+        <div className="CopyRigth">
+          <BiCopyright />
+          Your website 2022. All Rigths Reserved.
+        </div>
+      </footer>
     </FooterStyle>
   );
 }
